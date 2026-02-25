@@ -29,7 +29,7 @@ The model demonstrates high precision in controlled environments:
 ## 4. Adversarial Robustness Benchmark
 To test the model's reliability against malicious manipulation, we conducted a benchmark using 1,000 high-confidence samples. The Attack Success Rate (ASR) measures how often the model was successfully fooled.
 
-![Adversarial Attack Graphs](./images/attack_graphs.png)
+![Adversarial Attack Graphs](./images/attacks.png)
 
 ### Final Robustness Report
 | Attack Method | ASR (%) | Robust Accuracy (%) | Avg $L_\infty$ |
@@ -50,7 +50,7 @@ The Grad-CAM analysis targeted **Layer 2** and **Layer 3** of the ResNet-18.
 * **Initial Observation:** Early heatmaps showed a concentration on image corners (background artifacts).
 * **Current State:** Post-refinement, the model focuses on mid-level semantic features. This explainability layer confirms that while the model is accurate, it often relies on high-frequency noise typical of synthetic generators rather than just the "subject" of the image.
 
-![Grad-CAM Visualization](./images/gradcam_output.png)
+![Grad-CAM Visualization](./images/gradcam.png)
 
 
 ## 6. Deployment
